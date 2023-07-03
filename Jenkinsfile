@@ -14,7 +14,7 @@ pipeline {
 
         stage ('load') {
             steps {
-                load './jenkinstest/jenkins/sub1.groovy'
+                load 'jenkins/sub1.groovy'
             }
         }
     }
