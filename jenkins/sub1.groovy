@@ -1,11 +1,8 @@
-pipeline {
-    agent none
-    stages {
-        stage('List Files') {
-            steps {
-                script {
-                    sh "ls -al"
-                }
+stages {
+    stage('List Files') {
+        steps {
+            script {
+                sh "ls -al"
             }
         }
     }
