@@ -1,3 +1,3 @@
 node {
-    load './jenkins/sub1.groovy'
+    load 'jenkins/sub1.groovy'
 }
