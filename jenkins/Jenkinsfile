@@ -11,11 +11,5 @@ pipeline {
                 }
             }
         }
-
-        stage ('load') {
-            steps {
-                load 'jenkins/sub1.groovy'
-            }
-        }
     }
 }
