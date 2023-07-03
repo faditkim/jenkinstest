@@ -7,7 +7,7 @@ pipeline {
         stage('Greetings') {
             steps {
                 script {
-                    sh "echo Hello $MY_ENV"
+                    sh "echo Hello World!!"
                 }
             }
         }
