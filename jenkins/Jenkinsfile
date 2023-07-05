@@ -10,13 +10,10 @@
 //     }
 // }
 
-pipeline{
-    agent none
-    stages {
-        stage('Base') {
-            steps {
-                sh 'echo \'Hi I am Base\''
-            }
+stages {
+    stage('Base') {
+        steps {
+            sh 'echo \'Hi I am Base\''
         }
     }
 }
