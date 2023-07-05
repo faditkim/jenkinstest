@@ -2,9 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage('Run Base') {
+            build(job: 'test')
+        }
         stage('Show Path3') {
             steps {
                 sh 'pwd'
+                sh 'ls -al'
             }
         }
     }
