@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Run Base') {
-            build(job: 'test')
+            steps {
+                build(job: 'test')
+            }
         }
         stage('Show Path2') {
             steps {
