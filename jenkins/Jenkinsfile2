@@ -6,6 +6,7 @@ pipeline {
             steps {
 //                build(job: 'test')
                 load 'jenkins/Jenkinsfile'
+
             }
         }
         stage('Show Path2') {
