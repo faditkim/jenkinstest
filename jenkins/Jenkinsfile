@@ -5,15 +5,14 @@ pipeline {
         stage('Base') {
             steps {
                 sh 'echo \'Hi I am Base\''
+                sh 'echo pwd'
+            }
+        }
+
+        stage('Prepare') {
+            steps {
+                sh 'echo prepare'
             }
         }
     }
 }
-//
-// node('Jenkins') {
-//     stage('Base') {
-//         steps {
-//             sh 'echo \'Hi I am Base\''
-//         }
-//     }
-// }
