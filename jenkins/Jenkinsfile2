@@ -1,10 +1,13 @@
+def testPip = load "Jenkinsfile"
+
 pipeline {
     agent any
 
     stages {
         stage('Run Base') {
             steps {
-                build(job: 'test')
+//                build(job: 'test')
+                testPip.test()
             }
         }
         stage('Show Path2') {

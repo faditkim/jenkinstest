@@ -1,18 +1,28 @@
-pipeline {
-    agent any
+// pipeline {
+//     agent any
+//
+//     stages {
+//         stage('Base') {
+//             steps {
+//                 sh 'echo \'Hi I am Base\''
+//                 sh 'pwd'
+//             }
+//         }
+//
+//         stage('Prepare') {
+//             steps {
+//                 sh 'echo prepare'
+//             }
+//         }
+//     }
+// }
 
-    stages {
-        stage('Base') {
-            steps {
-                sh 'echo \'Hi I am Base\''
-                sh 'echo pwd'
-            }
-        }
-
-        stage('Prepare') {
-            steps {
-                sh 'echo prepare'
-            }
+def test(){
+    stage('Base') {
+        steps {
+            sh 'echo \'Hi I am Base\''
         }
     }
 }
+
+return this
