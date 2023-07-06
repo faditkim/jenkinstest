@@ -4,10 +4,11 @@ pipeline {
     agent any
 
     stages {
+        testPip.test()
         stage('Run Base') {
             steps {
 //                build(job: 'test')
-                testPip.test()
+
             }
         }
         stage('Show Path2') {
