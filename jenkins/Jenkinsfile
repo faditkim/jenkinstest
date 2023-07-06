@@ -1,19 +1,19 @@
-// pipeline {
-//     agent any
-//
-//     stages {
-//         stage('Base') {
-//             steps {
-//                 sh 'echo \'Hi I am Base\''
-//             }
-//         }
-//     }
-// }
+pipeline {
+    agent any
 
-node('Jenkins') {
-    stage('Base') {
-        steps {
-            sh 'echo \'Hi I am Base\''
+    stages {
+        stage('Base') {
+            steps {
+                sh 'echo \'Hi I am Base\''
+            }
         }
     }
 }
+//
+// node('Jenkins') {
+//     stage('Base') {
+//         steps {
+//             sh 'echo \'Hi I am Base\''
+//         }
+//     }
+// }

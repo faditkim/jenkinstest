@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Run Base') {
             steps {
-//                build(job: 'test')
-                load 'jenkins/Jenkinsfile'
+                build(job: 'test')
             }
         }
         stage('Show Path2') {
