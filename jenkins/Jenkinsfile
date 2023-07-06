@@ -10,7 +10,7 @@
 //     }
 // }
 
-node {
+node('Jenkins') {
     stage('Base') {
         steps {
             sh 'echo \'Hi I am Base\''
