@@ -12,6 +12,7 @@ pipeline {
         stage('Prepare') {
             steps {
                 sh 'echo prepare'
+                sh 'echo prepare2'
             }
         }
     }
